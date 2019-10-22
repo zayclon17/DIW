@@ -81,7 +81,6 @@ $var: 6;
  Interpolaciones
  Su sintasix es: 
 */
-/*
 p {
   background-image: url("icon-png"); }
 
@@ -93,13 +92,3 @@ p {
 
 .icon-linkedin {
   background-image: url("linkedin.icon"); }
-*/
-
-/**
- Mapas
- Su sintaxis es:
- $mapa: (clave:valor, clave:valor, ...)
- map-get($mapa, clave);
- 
- */
-
