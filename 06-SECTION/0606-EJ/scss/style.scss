@@ -8,14 +8,12 @@
     padding: 1em;
 }
 
-$zi: 3;
-
 @for $i from 2 through 5 {
     .card:nth-child(#{$i}) {
         position: absolute;
         left: 8rem * ($i - 1);
-        top: 5rem * ($i - 1);
-        @if ($i == $zi) {
+        top: 4rem * ($i - 1);
+        @if ($i == random($limit: 5)) {
             z-index: 1;
         }
     }
