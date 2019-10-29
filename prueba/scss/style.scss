@@ -1,0 +1,16 @@
+div{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+    &::after{
+        content: '';
+        display: block;
+        position: relative;
+        width: .5rem;
+        height: 8rem;
+        background-color: brown;
+        top: 5rem;
+        left: 2.2rem;
+    }
+}

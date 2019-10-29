@@ -11,14 +11,16 @@ body {
     margin-right: auto;
     padding-top: 5rem;
     position: relative;
+    
     .box {
         width: 30%;
         height: 12.5rem;
         border: 3px solid whitesmoke;
         background-size: cover;
         background-repeat: no-repeat;
-        //box-shadow: 0 0 7px rgba(0, 0, 8, 0.6);
+        box-shadow: 0 0 7px rgba(0, 0, 8, 0.6);
         position: absolute;
+        transition: transform 4s ease;
         @for $i from 1 through 4 {
             &:nth-child(#{$i}) {
                 background-image: url('../img/#{$i}.jpg');
@@ -37,6 +39,7 @@ body {
 
         &:hover {
             z-index: 3;
+            transform: rotate(random(360)+deg);
             .veil {
                 opacity: 1;
             }

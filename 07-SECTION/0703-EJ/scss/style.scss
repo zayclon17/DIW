@@ -1,0 +1,23 @@
+nav {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: salmon;
+    ul {
+        display: table;
+        margin: auto;
+        border-collapse: collapse;
+        table-layout: fixed; 
+        width: 80%;
+        li {
+            display: table-cell;
+            text-align: center;
+            border: 1px solid deepskyblue;
+            //width: 10rem;
+            a {
+                padding: 1em;
+                display: block;
+            }
+        }
+    }
+}
