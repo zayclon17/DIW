@@ -1,0 +1,33 @@
+body{
+    font-size: 0;
+}
+
+.flex-container {
+    background-color: salmon;
+    color: white;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+
+.flex-item {
+    font-size: 5em;
+    background-color: deepskyblue;
+    border: 3px solid;
+}
+
+
+/**
+ * STEP 01
+ */
+.flex {
+    display: flex;
+}
+
+
+/**
+ * STEP 02
+ */
+.inline-flex {
+    display: inline-flex;
+}
