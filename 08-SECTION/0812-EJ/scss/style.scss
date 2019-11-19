@@ -1,0 +1,17 @@
+.flex-container {
+    background-color: salmon;
+    display: flex;
+    max-width: 900px;
+}
+
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    flex-basis: 200px;
+    &:nth-child(3) {
+        flex-shrink: 3;
+    }
+
+}

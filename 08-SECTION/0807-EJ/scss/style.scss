@@ -1,0 +1,46 @@
+.flex-container{
+    height: 400px;
+    background-color: salmon;
+    display: flex;
+    align-items: flex-start;
+    max-width: 800px;
+    
+}
+.flex-item{
+    font-size: 5em;
+    background-color: deepskyblue;
+    color: white;
+    border: 1px solid;
+    width: 200px;
+}
+
+
+
+
+
+
+
+/*.flex-container {
+    background-color: salmon;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    // width: 800px;
+    /**
+     * STEP 01
+     
+    max-width: 800px;
+}
+
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    /**
+     * STEP 01
+     * Pero junto con el max-width no respeta el tamaño al reducir la pantalla
+     
+    width: 200px; 
+}
+*/

@@ -1,0 +1,32 @@
+.flex-container {
+    background-color: salmon;
+    display: flex;
+    max-width: 900px;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.flex-item {
+    font-size: 5em;
+    color: white;
+    background-color: deepskyblue;
+    border: 1px solid;
+    //STEP 01
+    //flex-basis: 100px
+     
+}
+
+
+/**
+ * STEP 02
+ */
+.steptwo {
+    .flex-item {
+        &:nth-child(4){
+            flex-shrink: 5;
+        }
+
+        flex-basis: 200px;
+        //flex-shrink: 0;
+    }
+} 
