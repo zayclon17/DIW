@@ -2,7 +2,7 @@
 
     max-width: 35rem;
     margin: 5rem auto 0;
-    //background-color: rgba(128, 128, 128, 0.363);
+    background-color: rgba(150, 150, 150, 0.185);
     position: relative;
 }
 
@@ -21,7 +21,7 @@
         width: 100%;
         position: absolute;
         top: 50%;
-        border: 1px dashed rgba(100, 100, 100, 0.315);
+        border: 1px dashed rgba(100, 100, 100, 0.50);
         z-index: -1;
     }
     &::after{
@@ -30,7 +30,7 @@
         width: 100%;
         position: absolute;
         top: 0;
-        border: 1px dashed rgba(100, 100, 100, 0.315);
+        border: 1px dashed rgba(100, 100, 100, 0.50);
         z-index: -1;
     }
 }
@@ -57,12 +57,12 @@
     height: 7rem;
 
     &.blue{
-        background-color: rgb(75, 75, 235);
+        background-color: rgb(55, 140, 219);
     }
     &.purple{
-        background-color: rgb(153, 39, 153);
+        background-color: rgb(208, 100, 223);
     }
     &.green{
-        background-color: rgb(74, 197, 74);
+        background-color: rgb(99, 228, 99);
     }
 }
