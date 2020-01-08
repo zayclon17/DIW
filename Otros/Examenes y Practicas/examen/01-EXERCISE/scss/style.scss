@@ -1,0 +1,24 @@
+nav {
+    background-color: deepskyblue;
+    color: white;
+    text-transform: uppercase;
+    
+    ul {
+        display: table; 
+        width: 100%; 
+        table-layout: fixed;
+        border-spacing: .5em 1em;
+        li {
+            display: table-cell; 
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 5px;
+            
+            a {
+                padding: 1em;
+                display: block;
+                
+            }            
+        }
+    }
+}

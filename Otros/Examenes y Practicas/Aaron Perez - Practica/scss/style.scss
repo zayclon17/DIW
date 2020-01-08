@@ -1,0 +1,134 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body{
+
+    background-color: $bgc;
+    font-family: $text;
+    color: $color;
+    @include color;
+}
+
+.encabezado {
+    text-align: center;
+    font-size: 4em;
+}
+
+.menu {
+    text-transform: uppercase;
+    border-top: $border2;
+    font-size: 1em;
+
+    ul {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    li {
+        display: table-cell;
+        text-align: center;
+    }
+
+    a {
+        padding: 1em 1em;
+        display: inline-block;
+        border-bottom: 4px solid transparent;
+        transition: border-bottom 1s ease;
+
+        &:hover {
+            border-bottom: $border3;
+        }
+    }
+}
+.wrapper {
+    width: 90%;
+    max-width: 75rem;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+    position: relative;
+    
+    .box {
+        width: 30%;
+        height: 60%;
+        border: $border3;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 8px gold;
+        position: absolute;
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                background-image: url('../img/#{$i}.jpg');
+            }
+        }
+
+        &:hover {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+    }
+}
+
+.box:nth-child(1) {
+    left: -1%;
+    transform: rotate(-7deg);
+}
+
+.box:nth-child(2) {
+    left: 19%;
+    transform: rotate(-3deg);
+    z-index: 2;
+}
+
+.box:nth-child(3) {
+    left: 48%;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+
+.box:nth-child(4) {
+    right: -1%;
+    transform: rotate(3deg);
+}
+
+.container {
+    
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    div {
+        @include texto;
+        border: $border1;
+        width: 400px;
+        padding: 2em;
+        margin: 1em;
+
+        p {
+            margin:0 0 5px 0;
+        }
+        @include boton;
+
+    }
+}
+
+@media(max-width: 1000px){
+    .wrapper{
+        display: none;
+    }
+}
+@media(max-width: 700px){
+    .encabezado{
+        font-size: 2em;
+    }
+   #menu{
+       display: none;
+   }
+}

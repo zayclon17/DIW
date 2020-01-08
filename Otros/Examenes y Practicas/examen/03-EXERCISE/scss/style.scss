@@ -1,0 +1,18 @@
+.wrapper{
+    width: 50%;
+    margin: 5em  auto;
+    padding: 2em;
+    background-color: rgb(240, 240, 180);
+}
+
+img{
+    float: right;
+    padding: 2em;
+}
+
+p{
+    text-align: justify;
+    &:nth-of-type(2) {
+        clear: both;
+    }
+}

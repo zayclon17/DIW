@@ -1,0 +1,38 @@
+body {
+    font: 3em sans-serif;
+    background-color: brown;
+}
+
+.grid {
+    padding: 1rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.item1:nth-child(2n) {
+    background-color: black;
+}
+.item1:nth-child(2n + 1) {
+    background-color: white;
+}
+.item2:nth-child(2n ) {
+    background-color: white;
+}
+.item2:nth-child(2n + 1) {
+    background-color: black;
+}
+
+/********************************************************************/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 10rem);
+    grid-template-rows: repeat(8, 10rem);
+    gap: .1rem;
+}

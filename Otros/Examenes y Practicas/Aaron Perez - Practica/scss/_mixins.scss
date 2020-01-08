@@ -1,0 +1,29 @@
+@mixin color {
+    @if lightness($bgc) < 50% {
+        color: white;
+    } @else {
+        color: black;
+    }
+}
+
+@mixin boton {
+    button {
+
+        color: white;
+        width: 100%;
+        padding: .5em;
+        margin: 20px 0 0 0;
+        background-color: rgba(153, 153, 153, 0.815);
+        &:hover {
+            background: darken(gray, 15%)
+          }
+
+    }
+}
+
+@mixin texto {
+
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+}
+

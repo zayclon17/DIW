@@ -1,0 +1,31 @@
+.wrapper{
+
+    height: 95%;
+    width: 50%;
+    background-color: aquamarine;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+
+    &:first-child{
+        position: relative;
+        left: 5%;
+        top: 5%;
+    }
+}
+img{
+    border-radius: 10px;
+}
+@for $i from 1 through 5 {
+    .card:nth-child(#{$i}) {
+        position: absolute;
+        left: 15% * ($i - 1);
+        top: 10% * ($i - 1);
+        &:hover{
+            z-index: 1; 
+        }
+    }
+}
