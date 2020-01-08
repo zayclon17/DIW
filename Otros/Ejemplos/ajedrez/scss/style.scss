@@ -1,9 +1,13 @@
 body {
     font: 3em sans-serif;
-    background-color: brown;
+    background-color: rgba(243, 150, 96, 0.74);
 }
 
 .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 10rem);
+    grid-template-rows: repeat(8, 10rem);
+    gap: .1rem;
     padding: 1rem;
 }
 
@@ -21,18 +25,9 @@ body {
 .item1:nth-child(2n + 1) {
     background-color: white;
 }
-.item2:nth-child(2n ) {
+.item2:nth-child(2n) {
     background-color: white;
 }
 .item2:nth-child(2n + 1) {
     background-color: black;
-}
-
-/********************************************************************/
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(8, 10rem);
-    grid-template-rows: repeat(8, 10rem);
-    gap: .1rem;
 }
