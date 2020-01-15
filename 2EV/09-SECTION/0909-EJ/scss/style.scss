@@ -28,7 +28,7 @@ body {
     grid-gap: 0.5rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 5rem);
-    grid-auto-rows: 5rem; // Mala idea el contenido desborda
+    //grid-auto-rows: 5rem; // Mala idea el contenido desborda
     grid-auto-rows: minmax(5rem, auto);
 
 }
