@@ -17,9 +17,39 @@ body {
 
 /*********************************************************/
 
+
+.grid{
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: [start] minmax(150px, 20%) [main] 1fr [end];
+    grid-template-rows: [header] minmax(4rem, auto) [main] 450px [footer] minmax(4rem, auto) [end];
+}
+
+header, footer {
+    grid-column: start/end;
+}
+
+@media screen and (max-width: 500px){
+
+    .grid{
+        grid-template-columns: [start] 1fr [end];
+        grid-template-rows: [header] minmax(4rem, auto) [sidebar] minmax(4rem, auto) [main] 450px [footer] minmax(4rem, auto) [end];
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /**
  * Step 01: Layout generado de la manera tradicional
- */
+ 
 .grid {
     display: grid;
     gap: .5rem;
@@ -32,8 +62,8 @@ header, footer {
 }
 
 
-/** 
- * Step 02: Layout generado con líneas nombradas
+
+  Step 02: Layout generado con líneas nombradas
 
 .grid {
     display: grid;

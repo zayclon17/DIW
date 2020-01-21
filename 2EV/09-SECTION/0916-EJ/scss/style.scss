@@ -17,9 +17,39 @@ body {
 
 /*********************************************************/
 
+.grid {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "nav main main"
+    "footer footer footer";
+    grid-template-rows: minmax(4rem, auto) 1fr minmax(4rem, auto);
+    min-height: 100vh;
+}
+
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+
+
 /**
  * Step 1: Areas nombradas
- */
+ 
 .grid {
     display: grid;
     gap: .5rem;
@@ -48,8 +78,8 @@ body {
     grid-area: footer;
 }
 
-/**
- * Step 2: Areas nombradas con celdas en blanco
+
+  Step 2: Areas nombradas con celdas en blanco
 
 .grid {
     display: grid;
@@ -62,9 +92,9 @@ body {
     min-height: 100vh;
     grid-auto-rows: 4rem 1fr 4rem;
 }
- */
-/**
- * Step 3: Otro ejemplo
+ 
+
+  Step 3: Otro ejemplo
 
  .grid {
     display: grid;

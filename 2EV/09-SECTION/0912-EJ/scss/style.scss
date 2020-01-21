@@ -1,10 +1,10 @@
 body  {
     font: 1.2rem arial;
-    color: #333;
+    color: rgb(41, 41, 41);
 }
 
 .wrapper {
-    background-color: #EDF4FC;
+    background-color: rgb(216, 216, 216);
     min-height: 100vh;
 }
 
@@ -14,22 +14,22 @@ body  {
 }
 
 .white {
-    background-color: #D0FFE3;
+    background-color: white;
 }
 
 .blue {
-    background-color: #D3EEFE;
+    background-color: rgb(131, 203, 245);
 }
 
 .green {
-    background-color: #D0FEE3;
+    background-color: rgb(140, 248, 185);
 }
 .yellow {
-    background-color: #FFFFE2;
+    background-color: rgb(250, 250, 154);
 }
 
 .red {
-    background-color: #F8D5D4;
+    background-color: rgb(255, 137, 133);
 }
 
 .grid-item {
@@ -57,12 +57,10 @@ body  {
     transform: translateX(-50%);
 }
 
-/*******************************************************/
-
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 110px);
-    grid-template-rows: repeat(6, 110px);
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
 }
 
 .item1 {
