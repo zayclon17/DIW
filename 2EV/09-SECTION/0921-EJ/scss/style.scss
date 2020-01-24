@@ -1,6 +1,6 @@
 body {
     font: 3em sans-serif;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
     color: white;
 }
 
@@ -25,6 +25,53 @@ body {
 
 /********************************************************************/
 
+.grid {
+    display: grid;
+    min-height: 90vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "a b b"
+    "a c c"
+    "d d d";
+    grid-template-rows: repeat(3, 7rem);
+    grid-template-columns: repeat(3, 10rem);
+}
+
+.item1{ grid-area: a; }
+.item2{ grid-area: b; }
+.item3{ grid-area: c; }
+.item4{ grid-area: d; }
+
+.grid{
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    align-content: start;
+    align-content: end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .grid {
     display: grid;
     min-height: 90vh;
@@ -65,3 +112,4 @@ body {
     align-content: space-between;
     align-content: space-evenly;
 }
+*/

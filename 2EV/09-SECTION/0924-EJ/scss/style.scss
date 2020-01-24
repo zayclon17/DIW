@@ -25,58 +25,57 @@ body {
 
 /********************************************************************/
 
-.grid{
-    display: grid;
-    gap: 0.3rem;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 6rem;
-    grid-auto-flow: dense;
-}
-
-.item2{
-    grid-column: span 3;
-    grid-row: span 2;
-}
-
-.item5{
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-
-.item7{
-    grid-column: span 3;
-    grid-row: span 3;
-}
-
-
-
-
-
-
-
-
-/*
 .grid {
     display: grid;
-    gap: .3rem;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 6rem;
-    grid-auto-flow: dense;
+    gap: .2rem;
+     grid-auto-flow: dense;
 }
 
-.item2 {
-    grid-column: span 3;
-    grid-row: span 2;
-}
 
-.item5 {
+.item7 {
     grid-column: span 2;
     grid-row: span 2;
 }
-
-.item7 {
-    grid-column: span 3;
-    grid-row: span 3;
+.item9 {
+    grid-column: span 2;
+    grid-row: span 2;
 }
-*/
+.item8 {
+    grid-column: 2 / span 2;
+}
+.item11 {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+/**
+ * Step 1: Adivina que pasa
+.item7 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+ */
+
+/**
+ * Step 2: Adivina que pasa
+.item9 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+ */
+
+/**
+  * Step 3: Adivina que pasa
+.item8 {
+    grid-column: 2 / span 2;
+}
+ */
+
+/**
+ * Step 4: Adivina que pasa
+.item11 {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+ */
